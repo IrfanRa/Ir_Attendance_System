@@ -1,8 +1,10 @@
 # attendance_system
 
 Secure Attendance based system on Blockchain Technology.
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+The Secure Attendance System based on Blockchain Technology is a decentralized application in which attendance record deployed on Ethereum/Sepolia Testnet Blockhain, and Biometric fingerprint Authentication on MongoDB.
+Dataset for FingerPrint Authentication:
+dataset_FVC2000_DB4_B
+Source:https://www.kaggle.com/datasets/peace1019/fingerprint-dataset-for-fvc2000-db4-b/code
 
 ## Required pakcages for Front-end/Next.js 14
 
