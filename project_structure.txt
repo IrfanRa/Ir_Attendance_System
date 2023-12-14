@@ -1,0 +1,76 @@
+npm install python-shell
+to intract with python next.js
+npm i axios
+npm i pyton-shell
+
+
+SecureAttendanceSystem/
+│
+├── src/app/                        # Frontend application
+│   ├── components/                 # Reusable UI components
+│   │   ├── Admin/
+│   │   │   ├── Dashboard.js        # Admin dashboard component
+│   │   │   └── AdminControls.js    # Admin-specific controls
+│   │   ├── Participant/
+│   │   │   ├── AttendanceMarker.js # Component for marking attendance
+│   │   │   └── AttendanceView.js   # View attendance record component
+│   │   └── Shared/
+│   │       └── Navbar.js           # Shared navigation bar
+│   ├── pages/                      # Pages for the application
+│   │   ├── admin/
+│   │   │   └── index.js            # Admin homepage
+│   │   ├── participant/
+│   │   │   └── index.js            # Participant homepage
+│   │   └── index.js                # Main landing page
+│   ├── public/                     # Static files like images, fonts, etc.
+│   ├── styles/                     # CSS/Tailwind CSS styles
+│   └── utils/                      # Utility functions and helpers
+│       └── api.js                  # API call functions
+│
+├── server/                         # Backend application
+│   ├── api/                        # API routes and controllers
+│   │   ├── attendance/
+│   │   │   └── attendanceController.js # Attendance related functions
+│   │   └── user/
+│   │       └── userController.js       # User management functions
+│   ├── config/                     # Configuration files
+│   │   └── dbConfig.js             # Database configuration
+│   ├── db/                         # Database connection and models
+│   │   ├── models/
+│   │   │   └── userModel.js        # User model
+│   │   └── index.js                # DB setup and connection
+│   ├── middleware/                 # Middleware functions
+│   │   └── authMiddleware.js       # Authentication middleware
+│   └── utils/                      # Server utility functions
+│       └── logger.js               # Logging utility
+│
+├── blockchain/                     # Blockchain-related files
+│   ├── contracts/                  # Solidity contracts
+│   │   └── AttendanceContract.sol  # Attendance tracking contract
+│   ├── migrations/
+│   │   └── 1_initial_migration.js  # Initial migration script
+│   ├── tests/
+│   │   └── attendanceContractTest.js # Tests for attendance contract
+│   └── truffle-config.js           # Truffle configuration
+│
+├── python/                         # Python scripts and modules
+│   ├── scripts/                    # Python utility scripts
+│   │   ├── fingerprint_processing.py  # Fingerprint image processing
+│   │   └── feature_extraction.py      # Feature extraction from fingerprint
+│   ├── blockchain_interaction/     # Python modules for blockchain interaction
+│   │   └── contract_interaction.py    # Interact with contracts
+│   └── requirements.txt            # Python dependencies
+│
+├── dataset/                        # Dataset for fingerprint scanning
+│   └── fingerprints/               # Fingerprint images and related data
+│
+├── docs/                           # Documentation files
+│   └── API_Documentation.md        # API documentation
+│
+├── scripts/                        # Utility scripts
+│   └── setupScript.sh              # Initial setup script
+│
+├── .env                            # Environment variables
+├── .gitignore                      # Git ignore file
+├── package.json                    # Node.js dependencies and scripts
+└── README.md                       # Project README file

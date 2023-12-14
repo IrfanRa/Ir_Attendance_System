@@ -1,0 +1,1319 @@
+{
+  "contractName": "Attendance",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "attendanceRecords",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "date",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "attended",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "internalType": "bool",
+          "name": "_attended",
+          "type": "bool"
+        }
+      ],
+      "name": "markAttendance",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "getAttendanceRecordCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"attendanceRecords\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"date\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"attended\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"}],\"name\":\"getAttendanceRecordCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"bool\",\"name\":\"_attended\",\"type\":\"bool\"}],\"name\":\"markAttendance\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Attendance.sol\":\"Attendance\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Attendance.sol\":{\"keccak256\":\"0x0f18bddb6c0c106b41f0f2c508e1c7434a8646daf2959ceb71cad6e04488f446\",\"urls\":[\"bzz-raw://25b5e1aa4167c887a4385d6774aedfb32973323c3f172e40081646f29da6f84e\",\"dweb:/ipfs/QmaffGxdfHPPSVcVyvVapJehmXsRqtLwkxQWKkLHzsR5qQ\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506102bc806100206000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c80633d50e466146100465780635bc8f04b1461009e578063c820d0fb1461010b575b600080fd5b6100886004803603602081101561005c57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061013b565b6040518082815260200191505060405180910390f35b6100ea600480360360408110156100b457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190505050610186565b60405180838152602001821515151581526020019250505060405180910390f35b6101396004803603602081101561012157600080fd5b810190808035151590602001909291905050506101d1565b005b60008060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020805490509050919050565b6000602052816000526040600020818154811061019f57fe5b9060005260206000209060020201600091509150508060000154908060010160009054906101000a900460ff16905082565b60004290506000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206040518060400160405280838152602001841515815250908060018154018082558091505090600182039060005260206000209060020201600090919290919091506000820151816000015560208201518160010160006101000a81548160ff021916908315150217905550505050505056fea265627a7a72315820cc3e4900b1997bf4cee8421abcedfb39b50b6e255384205b425e911cb2b81a0b64736f6c63430005100032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100415760003560e01c80633d50e466146100465780635bc8f04b1461009e578063c820d0fb1461010b575b600080fd5b6100886004803603602081101561005c57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919050505061013b565b6040518082815260200191505060405180910390f35b6100ea600480360360408110156100b457600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff16906020019092919080359060200190929190505050610186565b60405180838152602001821515151581526020019250505060405180910390f35b6101396004803603602081101561012157600080fd5b810190808035151590602001909291905050506101d1565b005b60008060008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020805490509050919050565b6000602052816000526040600020818154811061019f57fe5b9060005260206000209060020201600091509150508060000154908060010160009054906101000a900460ff16905082565b60004290506000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206040518060400160405280838152602001841515815250908060018154018082558091505090600182039060005260206000209060020201600090919290919091506000820151816000015560208201518160010160006101000a81548160ff021916908315150217905550505050505056fea265627a7a72315820cc3e4900b1997bf4cee8421abcedfb39b50b6e255384205b425e911cb2b81a0b64736f6c63430005100032",
+  "sourceMap": "65:736:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;65:736:0;;;;;;;",
+  "deployedSourceMap": "65:736:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;65:736:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;667:131;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;667:131:0;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;286:63;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;286:63:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;394:206;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;394:206:0;;;;;;;;;;;;;;;;;;;:::i;:::-;;667:131;736:4;760:17;:23;778:4;760:23;;;;;;;;;;;;;;;:30;;;;753:37;;667:131;;;:::o;286:63::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;394:206::-;452:10;465:3;452:16;;522:17;:29;540:10;522:29;;;;;;;;;;;;;;;557:34;;;;;;;;574:5;557:34;;;;581:9;557:34;;;;;522:70;;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;522:70:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;394:206;;:::o",
+  "source": "//blockhain/contracts/Attendance.sol\r\npragma solidity 0.5.16;\r\n\r\ncontract Attendance {\r\n    // Define a struct to hold attendance data\r\n    struct AttendanceRecord {\r\n        uint date;\r\n        bool attended;\r\n    }\r\n\r\n    // Mapping from user address to their attendance records\r\n    mapping(address => AttendanceRecord[]) public attendanceRecords;\r\n\r\n    // Function to mark attendance\r\n    function markAttendance(bool _attended) public {\r\n        uint today = now; // 'now' is an alias for 'block.timestamp'\r\n        attendanceRecords[msg.sender].push(AttendanceRecord(today, _attended));\r\n    }\r\n\r\n    // Function to get attendance record count for a user\r\n    function getAttendanceRecordCount(address user) public view returns (uint) {\r\n        return attendanceRecords[user].length;\r\n    }\r\n}\r\n",
+  "sourcePath": "D:\\CS\\Third Semester\\ir-attendance-system\\blockchain\\contracts\\Attendance.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/Attendance.sol",
+    "exportedSymbols": {
+      "Attendance": [
+        46
+      ]
+    },
+    "id": 47,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".16"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "38:23:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 46,
+        "linearizedBaseContracts": [
+          46
+        ],
+        "name": "Attendance",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Attendance.AttendanceRecord",
+            "id": 6,
+            "members": [
+              {
+                "constant": false,
+                "id": 3,
+                "name": "date",
+                "nodeType": "VariableDeclaration",
+                "scope": 6,
+                "src": "175:9:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 2,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "175:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 5,
+                "name": "attended",
+                "nodeType": "VariableDeclaration",
+                "scope": 6,
+                "src": "195:13:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 4,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "195:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "AttendanceRecord",
+            "nodeType": "StructDefinition",
+            "scope": 46,
+            "src": "140:76:0",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 11,
+            "name": "attendanceRecords",
+            "nodeType": "VariableDeclaration",
+            "scope": 46,
+            "src": "286:63:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_AttendanceRecord_$6_storage_$dyn_storage_$",
+              "typeString": "mapping(address => struct Attendance.AttendanceRecord[])"
+            },
+            "typeName": {
+              "id": 10,
+              "keyType": {
+                "id": 7,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "294:7:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "286:38:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_AttendanceRecord_$6_storage_$dyn_storage_$",
+                "typeString": "mapping(address => struct Attendance.AttendanceRecord[])"
+              },
+              "valueType": {
+                "baseType": {
+                  "contractScope": null,
+                  "id": 8,
+                  "name": "AttendanceRecord",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 6,
+                  "src": "305:16:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_AttendanceRecord_$6_storage_ptr",
+                    "typeString": "struct Attendance.AttendanceRecord"
+                  }
+                },
+                "id": 9,
+                "length": null,
+                "nodeType": "ArrayTypeName",
+                "src": "305:18:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_array$_t_struct$_AttendanceRecord_$6_storage_$dyn_storage_ptr",
+                  "typeString": "struct Attendance.AttendanceRecord[]"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 31,
+              "nodeType": "Block",
+              "src": "441:159:0",
+              "statements": [
+                {
+                  "assignments": [
+                    17
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 17,
+                      "name": "today",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 31,
+                      "src": "452:10:0",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 16,
+                        "name": "uint",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "452:4:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 19,
+                  "initialValue": {
+                    "argumentTypes": null,
+                    "id": 18,
+                    "name": "now",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 63,
+                    "src": "465:3:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "452:16:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 26,
+                            "name": "today",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 17,
+                            "src": "574:5:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          {
+                            "argumentTypes": null,
+                            "id": 27,
+                            "name": "_attended",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 13,
+                            "src": "581:9:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bool",
+                              "typeString": "bool"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            },
+                            {
+                              "typeIdentifier": "t_bool",
+                              "typeString": "bool"
+                            }
+                          ],
+                          "id": 25,
+                          "name": "AttendanceRecord",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 6,
+                          "src": "557:16:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_struct$_AttendanceRecord_$6_storage_ptr_$",
+                            "typeString": "type(struct Attendance.AttendanceRecord storage pointer)"
+                          }
+                        },
+                        "id": 28,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "structConstructorCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "557:34:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_AttendanceRecord_$6_memory",
+                          "typeString": "struct Attendance.AttendanceRecord memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_struct$_AttendanceRecord_$6_memory",
+                          "typeString": "struct Attendance.AttendanceRecord memory"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "id": 20,
+                          "name": "attendanceRecords",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 11,
+                          "src": "522:17:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_AttendanceRecord_$6_storage_$dyn_storage_$",
+                            "typeString": "mapping(address => struct Attendance.AttendanceRecord storage ref[] storage ref)"
+                          }
+                        },
+                        "id": 23,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 21,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 61,
+                            "src": "540:3:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 22,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "540:10:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "522:29:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_struct$_AttendanceRecord_$6_storage_$dyn_storage",
+                          "typeString": "struct Attendance.AttendanceRecord storage ref[] storage ref"
+                        }
+                      },
+                      "id": 24,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "push",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "522:34:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_AttendanceRecord_$6_storage_$returns$_t_uint256_$",
+                        "typeString": "function (struct Attendance.AttendanceRecord storage ref) returns (uint256)"
+                      }
+                    },
+                    "id": 29,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "522:70:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 30,
+                  "nodeType": "ExpressionStatement",
+                  "src": "522:70:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 32,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "markAttendance",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 14,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13,
+                  "name": "_attended",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 32,
+                  "src": "418:14:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 12,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "418:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "417:16:0"
+            },
+            "returnParameters": {
+              "id": 15,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "441:0:0"
+            },
+            "scope": 46,
+            "src": "394:206:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 44,
+              "nodeType": "Block",
+              "src": "742:56:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "expression": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 39,
+                        "name": "attendanceRecords",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11,
+                        "src": "760:17:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_address_$_t_array$_t_struct$_AttendanceRecord_$6_storage_$dyn_storage_$",
+                          "typeString": "mapping(address => struct Attendance.AttendanceRecord storage ref[] storage ref)"
+                        }
+                      },
+                      "id": 41,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 40,
+                        "name": "user",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 34,
+                        "src": "778:4:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "IndexAccess",
+                      "src": "760:23:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_array$_t_struct$_AttendanceRecord_$6_storage_$dyn_storage",
+                        "typeString": "struct Attendance.AttendanceRecord storage ref[] storage ref"
+                      }
+                    },
+                    "id": 42,
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "length",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": null,
+                    "src": "760:30:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 38,
+                  "id": 43,
+                  "nodeType": "Return",
+                  "src": "753:37:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 45,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getAttendanceRecordCount",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 35,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 34,
+                  "name": "user",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 45,
+                  "src": "701:12:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 33,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "701:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "700:14:0"
+            },
+            "returnParameters": {
+              "id": 38,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 37,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 45,
+                  "src": "736:4:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 36,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "736:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "735:6:0"
+            },
+            "scope": 46,
+            "src": "667:131:0",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 47,
+        "src": "65:736:0"
+      }
+    ],
+    "src": "38:765:0"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/Attendance.sol",
+      "exportedSymbols": {
+        "Attendance": [
+          46
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.5",
+            ".16"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "38:23:0"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            46
+          ],
+          "name": "Attendance",
+          "scope": 47
+        },
+        "children": [
+          {
+            "attributes": {
+              "canonicalName": "Attendance.AttendanceRecord",
+              "name": "AttendanceRecord",
+              "scope": 46,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "date",
+                  "scope": 6,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 2,
+                    "name": "ElementaryTypeName",
+                    "src": "175:4:0"
+                  }
+                ],
+                "id": 3,
+                "name": "VariableDeclaration",
+                "src": "175:9:0"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "name": "attended",
+                  "scope": 6,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "bool",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "bool",
+                      "type": "bool"
+                    },
+                    "id": 4,
+                    "name": "ElementaryTypeName",
+                    "src": "195:4:0"
+                  }
+                ],
+                "id": 5,
+                "name": "VariableDeclaration",
+                "src": "195:13:0"
+              }
+            ],
+            "id": 6,
+            "name": "StructDefinition",
+            "src": "140:76:0"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "attendanceRecords",
+              "scope": 46,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "mapping(address => struct Attendance.AttendanceRecord[])",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "type": "mapping(address => struct Attendance.AttendanceRecord[])"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "address",
+                      "type": "address"
+                    },
+                    "id": 7,
+                    "name": "ElementaryTypeName",
+                    "src": "294:7:0"
+                  },
+                  {
+                    "attributes": {
+                      "length": null,
+                      "type": "struct Attendance.AttendanceRecord[]"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "AttendanceRecord",
+                          "referencedDeclaration": 6,
+                          "type": "struct Attendance.AttendanceRecord"
+                        },
+                        "id": 8,
+                        "name": "UserDefinedTypeName",
+                        "src": "305:16:0"
+                      }
+                    ],
+                    "id": 9,
+                    "name": "ArrayTypeName",
+                    "src": "305:18:0"
+                  }
+                ],
+                "id": 10,
+                "name": "Mapping",
+                "src": "286:38:0"
+              }
+            ],
+            "id": 11,
+            "name": "VariableDeclaration",
+            "src": "286:63:0"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "markAttendance",
+              "scope": 46,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "_attended",
+                      "scope": 32,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "bool",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "bool",
+                          "type": "bool"
+                        },
+                        "id": 12,
+                        "name": "ElementaryTypeName",
+                        "src": "418:4:0"
+                      }
+                    ],
+                    "id": 13,
+                    "name": "VariableDeclaration",
+                    "src": "418:14:0"
+                  }
+                ],
+                "id": 14,
+                "name": "ParameterList",
+                "src": "417:16:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 15,
+                "name": "ParameterList",
+                "src": "441:0:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "assignments": [
+                        17
+                      ]
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "constant": false,
+                          "name": "today",
+                          "scope": 31,
+                          "stateVariable": false,
+                          "storageLocation": "default",
+                          "type": "uint256",
+                          "value": null,
+                          "visibility": "internal"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "name": "uint",
+                              "type": "uint256"
+                            },
+                            "id": 16,
+                            "name": "ElementaryTypeName",
+                            "src": "452:4:0"
+                          }
+                        ],
+                        "id": 17,
+                        "name": "VariableDeclaration",
+                        "src": "452:10:0"
+                      },
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 63,
+                          "type": "uint256",
+                          "value": "now"
+                        },
+                        "id": 18,
+                        "name": "Identifier",
+                        "src": "465:3:0"
+                      }
+                    ],
+                    "id": 19,
+                    "name": "VariableDeclarationStatement",
+                    "src": "452:16:0"
+                  },
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "isStructConstructorCall": false,
+                          "lValueRequested": false,
+                          "names": [
+                            null
+                          ],
+                          "type": "uint256",
+                          "type_conversion": false
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": [
+                                {
+                                  "typeIdentifier": "t_struct$_AttendanceRecord_$6_memory",
+                                  "typeString": "struct Attendance.AttendanceRecord memory"
+                                }
+                              ],
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "push",
+                              "referencedDeclaration": null,
+                              "type": "function (struct Attendance.AttendanceRecord storage ref) returns (uint256)"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "isConstant": false,
+                                  "isLValue": true,
+                                  "isPure": false,
+                                  "lValueRequested": false,
+                                  "type": "struct Attendance.AttendanceRecord storage ref[] storage ref"
+                                },
+                                "children": [
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "overloadedDeclarations": [
+                                        null
+                                      ],
+                                      "referencedDeclaration": 11,
+                                      "type": "mapping(address => struct Attendance.AttendanceRecord storage ref[] storage ref)",
+                                      "value": "attendanceRecords"
+                                    },
+                                    "id": 20,
+                                    "name": "Identifier",
+                                    "src": "522:17:0"
+                                  },
+                                  {
+                                    "attributes": {
+                                      "argumentTypes": null,
+                                      "isConstant": false,
+                                      "isLValue": false,
+                                      "isPure": false,
+                                      "lValueRequested": false,
+                                      "member_name": "sender",
+                                      "referencedDeclaration": null,
+                                      "type": "address payable"
+                                    },
+                                    "children": [
+                                      {
+                                        "attributes": {
+                                          "argumentTypes": null,
+                                          "overloadedDeclarations": [
+                                            null
+                                          ],
+                                          "referencedDeclaration": 61,
+                                          "type": "msg",
+                                          "value": "msg"
+                                        },
+                                        "id": 21,
+                                        "name": "Identifier",
+                                        "src": "540:3:0"
+                                      }
+                                    ],
+                                    "id": 22,
+                                    "name": "MemberAccess",
+                                    "src": "540:10:0"
+                                  }
+                                ],
+                                "id": 23,
+                                "name": "IndexAccess",
+                                "src": "522:29:0"
+                              }
+                            ],
+                            "id": 24,
+                            "name": "MemberAccess",
+                            "src": "522:34:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "isStructConstructorCall": true,
+                              "lValueRequested": false,
+                              "names": [
+                                null
+                              ],
+                              "type": "struct Attendance.AttendanceRecord memory",
+                              "type_conversion": false
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": [
+                                    {
+                                      "typeIdentifier": "t_uint256",
+                                      "typeString": "uint256"
+                                    },
+                                    {
+                                      "typeIdentifier": "t_bool",
+                                      "typeString": "bool"
+                                    }
+                                  ],
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 6,
+                                  "type": "type(struct Attendance.AttendanceRecord storage pointer)",
+                                  "value": "AttendanceRecord"
+                                },
+                                "id": 25,
+                                "name": "Identifier",
+                                "src": "557:16:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 17,
+                                  "type": "uint256",
+                                  "value": "today"
+                                },
+                                "id": 26,
+                                "name": "Identifier",
+                                "src": "574:5:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 13,
+                                  "type": "bool",
+                                  "value": "_attended"
+                                },
+                                "id": 27,
+                                "name": "Identifier",
+                                "src": "581:9:0"
+                              }
+                            ],
+                            "id": 28,
+                            "name": "FunctionCall",
+                            "src": "557:34:0"
+                          }
+                        ],
+                        "id": 29,
+                        "name": "FunctionCall",
+                        "src": "522:70:0"
+                      }
+                    ],
+                    "id": 30,
+                    "name": "ExpressionStatement",
+                    "src": "522:70:0"
+                  }
+                ],
+                "id": 31,
+                "name": "Block",
+                "src": "441:159:0"
+              }
+            ],
+            "id": 32,
+            "name": "FunctionDefinition",
+            "src": "394:206:0"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getAttendanceRecordCount",
+              "scope": 46,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "user",
+                      "scope": 45,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "address",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "stateMutability": "nonpayable",
+                          "type": "address"
+                        },
+                        "id": 33,
+                        "name": "ElementaryTypeName",
+                        "src": "701:7:0"
+                      }
+                    ],
+                    "id": 34,
+                    "name": "VariableDeclaration",
+                    "src": "701:12:0"
+                  }
+                ],
+                "id": 35,
+                "name": "ParameterList",
+                "src": "700:14:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 45,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 36,
+                        "name": "ElementaryTypeName",
+                        "src": "736:4:0"
+                      }
+                    ],
+                    "id": 37,
+                    "name": "VariableDeclaration",
+                    "src": "736:4:0"
+                  }
+                ],
+                "id": 38,
+                "name": "ParameterList",
+                "src": "735:6:0"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 38
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": true,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "member_name": "length",
+                          "referencedDeclaration": null,
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "type": "struct Attendance.AttendanceRecord storage ref[] storage ref"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 11,
+                                  "type": "mapping(address => struct Attendance.AttendanceRecord storage ref[] storage ref)",
+                                  "value": "attendanceRecords"
+                                },
+                                "id": 39,
+                                "name": "Identifier",
+                                "src": "760:17:0"
+                              },
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 34,
+                                  "type": "address",
+                                  "value": "user"
+                                },
+                                "id": 40,
+                                "name": "Identifier",
+                                "src": "778:4:0"
+                              }
+                            ],
+                            "id": 41,
+                            "name": "IndexAccess",
+                            "src": "760:23:0"
+                          }
+                        ],
+                        "id": 42,
+                        "name": "MemberAccess",
+                        "src": "760:30:0"
+                      }
+                    ],
+                    "id": 43,
+                    "name": "Return",
+                    "src": "753:37:0"
+                  }
+                ],
+                "id": 44,
+                "name": "Block",
+                "src": "742:56:0"
+              }
+            ],
+            "id": 45,
+            "name": "FunctionDefinition",
+            "src": "667:131:0"
+          }
+        ],
+        "id": 46,
+        "name": "ContractDefinition",
+        "src": "65:736:0"
+      }
+    ],
+    "id": 47,
+    "name": "SourceUnit",
+    "src": "38:765:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.16",
+  "updatedAt": "2023-12-14T02:24:02.067Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
