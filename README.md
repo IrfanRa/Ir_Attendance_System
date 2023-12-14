@@ -1,13 +1,11 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-
-## Required pakcages for Front-end/Next.js 14.
+## Required pakcages for Front-end/Next.js 14
 
 1. npm i @kinde-oss/kinde-auth-nextjs
 2. npx shadcn-ui@latest init
 3. npm install @radix-ui/react-slot
 4. npm install react-icons --save
-
 
 ## Required pakcages for Python Interaction
 
@@ -17,9 +15,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## setup blockhain required pakcages for Blockchain truffle
 
 truffle & infura project setup
+
 1. npm truffle -g
 2. $ npm install @truffle/hdwallet-provider
-
 
 ## Getting Started setup Next.js project frontend realted
 
