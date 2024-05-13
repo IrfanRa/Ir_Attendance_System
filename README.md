@@ -1,35 +1,35 @@
 # attendance_system
 
-Secure Attendance based system on Blockchain Technology.
-The Secure Attendance System based on Blockchain Technology is a decentralized application in which attendance record deployed on Ethereum/Sepolia Testnet Blockhain, and Biometric fingerprint Authentication on MongoDB.
+Secure Attendance-based system on Blockchain Technology.
+The Secure Attendance System based on Blockchain Technology is a decentralized application in which attendance records are deployed on Ethereum/Sepolia Testnet Blockchain and Biometric fingerprint Authentication using Kinde Auth.
 Dataset for FingerPrint Authentication:
 dataset_FVC2000_DB4_B
 Source:https://www.kaggle.com/datasets/peace1019/fingerprint-dataset-for-fvc2000-db4-b/code
 
-## Required pakcages for Front-end/Next.js 14
+## Required pakcages for Front-end/Next.js 14/Kinde Auth
 
 1. npm i @kinde-oss/kinde-auth-nextjs
 2. npx shadcn-ui@latest init
 3. npm install @radix-ui/react-slot
 4. npm install react-icons --save
 
-## Required pakcages for Python Interaction
+## Required packages for Python Interaction
 
 1. npm i axios
 2. npm i python-shell
 
-## setup blockhain required pakcages for Blockchain truffle
+## Setup blockchain required packages for Blockchain truffle
 
 truffle & infura project setup
 
 1. npm truffle -g
 2. $ npm install @truffle/hdwallet-provider
 
-## Getting Started setup Next.js project frontend realted
+## Getting Started setup Next.js project frontend related
 
-1. node version must be installed on machine to run this project.
+1. The Node.js version must be installed on the machine to run this project.
 
-2. install node_module dependancy in the root directory by run below command
+2. install node_module dependency in the root directory by running below command
 
 npm install
 
